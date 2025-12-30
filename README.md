@@ -8,8 +8,6 @@ This repository hosts the **Anshar–Hyperon Pipeline** and its extended archite
 
 The goal is to create interoperable modules that allow artificial agents and decentralized communities to **comprehend, honor, and align with human emotional nuance**.
 
-This project provides a comprehensive pipeline for emotional comprehension in AI systems, enabling more empathetic and contextually appropriate responses through neuro-symbolic approaches integrated with modern AI architectures.
-
 ---
 
 ## Architecture Layers
@@ -96,7 +94,7 @@ The Emotional Comprehension Pipeline is built on six interconnected architectura
 - Anti-capture mechanisms
 
 **Artifacts:**
-- Smart-contract clauses
+- Smart contract clauses
 - Impact metrics
 
 ---
