@@ -1,0 +1,199 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Sample input-output pairs for the Emotional Comprehension Pipeline",
+    "purpose": "Demonstrate pipeline capabilities and expected behavior",
+    "created": "2025-12-30"
+  },
+  "samples": [
+    {
+      "id": "sample_001",
+      "input": {
+        "text": "I'm feeling really overwhelmed with all the deadlines coming up.",
+        "context": {
+          "conversation_history": [],
+          "user_state": "stressed",
+          "timestamp": "2025-12-30T10:00:00Z"
+        }
+      },
+      "expected_output": {
+        "emotional_analysis": {
+          "primary_emotion": "anxiety",
+          "secondary_emotions": ["stress", "overwhelm"],
+          "intensity": 0.75,
+          "valence": -0.6
+        },
+        "comprehension": {
+          "situation": "multiple upcoming deadlines",
+          "needs": ["support", "organization", "stress_reduction"],
+          "concerns": ["time_management", "performance"]
+        },
+        "response_guidance": {
+          "tone": "supportive and calming",
+          "approach": "validate feelings, offer practical help",
+          "suggested_actions": [
+            "acknowledge the overwhelming feeling",
+            "help prioritize tasks",
+            "offer coping strategies"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sample_002",
+      "input": {
+        "text": "That's actually really exciting! I never thought about it that way.",
+        "context": {
+          "conversation_history": [
+            "Previous message discussed a new perspective on a project"
+          ],
+          "user_state": "engaged",
+          "timestamp": "2025-12-30T10:15:00Z"
+        }
+      },
+      "expected_output": {
+        "emotional_analysis": {
+          "primary_emotion": "excitement",
+          "secondary_emotions": ["curiosity", "surprise"],
+          "intensity": 0.8,
+          "valence": 0.85
+        },
+        "comprehension": {
+          "situation": "cognitive shift from new perspective",
+          "needs": ["encouragement", "elaboration"],
+          "engagement_level": "high"
+        },
+        "response_guidance": {
+          "tone": "enthusiastic and supportive",
+          "approach": "build on excitement, explore further",
+          "suggested_actions": [
+            "acknowledge enthusiasm",
+            "expand on the new perspective",
+            "encourage exploration"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sample_003",
+      "input": {
+        "text": "I don't know... I'm not sure how I feel about this.",
+        "context": {
+          "conversation_history": [
+            "Discussing a significant life decision"
+          ],
+          "user_state": "uncertain",
+          "timestamp": "2025-12-30T10:30:00Z"
+        }
+      },
+      "expected_output": {
+        "emotional_analysis": {
+          "primary_emotion": "uncertainty",
+          "secondary_emotions": ["confusion", "ambivalence"],
+          "intensity": 0.6,
+          "valence": -0.2
+        },
+        "comprehension": {
+          "situation": "decision-making difficulty",
+          "needs": ["clarity", "support", "time_to_process"],
+          "cognitive_state": "conflicted"
+        },
+        "response_guidance": {
+          "tone": "patient and non-judgmental",
+          "approach": "help explore feelings, no pressure",
+          "suggested_actions": [
+            "validate the uncertainty",
+            "help articulate feelings",
+            "offer perspective without pushing"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sample_004",
+      "input": {
+        "text": "Thank you so much for understanding. It means a lot.",
+        "context": {
+          "conversation_history": [
+            "Shared vulnerable information",
+            "Received empathetic response"
+          ],
+          "user_state": "grateful",
+          "timestamp": "2025-12-30T10:45:00Z"
+        }
+      },
+      "expected_output": {
+        "emotional_analysis": {
+          "primary_emotion": "gratitude",
+          "secondary_emotions": ["relief", "connection"],
+          "intensity": 0.85,
+          "valence": 0.9
+        },
+        "comprehension": {
+          "situation": "feeling understood and validated",
+          "needs": ["acknowledgment", "continued support"],
+          "relationship_state": "strengthened"
+        },
+        "response_guidance": {
+          "tone": "warm and genuine",
+          "approach": "accept gratitude gracefully",
+          "suggested_actions": [
+            "acknowledge their thanks",
+            "reaffirm support",
+            "maintain empathetic connection"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sample_005",
+      "input": {
+        "text": "This is frustrating. The system keeps giving me errors and I can't figure out why.",
+        "context": {
+          "conversation_history": [
+            "Multiple attempts to solve technical problem"
+          ],
+          "user_state": "frustrated",
+          "timestamp": "2025-12-30T11:00:00Z"
+        }
+      },
+      "expected_output": {
+        "emotional_analysis": {
+          "primary_emotion": "frustration",
+          "secondary_emotions": ["confusion", "irritation"],
+          "intensity": 0.7,
+          "valence": -0.65
+        },
+        "comprehension": {
+          "situation": "technical difficulty causing frustration",
+          "needs": ["practical help", "validation", "problem_solving"],
+          "urgency": "moderate"
+        },
+        "response_guidance": {
+          "tone": "calm and solution-focused",
+          "approach": "validate frustration, offer systematic help",
+          "suggested_actions": [
+            "acknowledge the frustration",
+            "offer to troubleshoot systematically",
+            "provide clear, step-by-step assistance"
+          ]
+        }
+      }
+    }
+  ],
+  "notes": {
+    "pipeline_stages": [
+      "Input processing and context extraction",
+      "Emotional analysis and classification",
+      "Situation comprehension and need identification",
+      "Response guidance generation",
+      "Alignment and appropriateness validation"
+    ],
+    "evaluation_criteria": [
+      "Emotional accuracy: Does the analysis correctly identify emotions?",
+      "Comprehension depth: Does it understand the underlying situation?",
+      "Response appropriateness: Is the guidance suitable for the context?",
+      "Ethical alignment: Does it respect user autonomy and wellbeing?"
+    ]
+  }
+}
