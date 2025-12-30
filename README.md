@@ -9,7 +9,7 @@ This repository provides a pipeline for emotional comprehension in AI systems, e
 ## Template Repository
 
 This project is inspired by and builds upon concepts from:
-- [Neurodivergent Biocentric Alignment](https://github.com/neurodivergent-biocentric-alignment)
+- [Neurodivergent Biocentric Alignment](https://github.com/colleenpridemore/neurodivergent-biocentric-alignment)
 
 ## Project Structure
 
@@ -19,31 +19,42 @@ Emo_Comprehension_Pipeline/
 ├── src/          # Source code
 ├── examples/     # Example implementations
 ├── tests/        # Test suites
+├── LICENSES/     # AI Governance Commons licenses
+├── LICENSE       # CC0 1.0 Universal (Public Domain)
 └── README.md     # This file
 ```
 
-## Sustainability & Ethical Licensing
+## AI Governance & Ethical Licensing
 
-This project is committed to ethical software development and environmental sustainability. We employ a multi-license approach that embraces:
+This project is committed to ethical AI development and environmental sustainability through the **BGINEXUS.io AI Commons Licensing Framework**. We incorporate six governance logics for impact-oriented AI licensing:
 
-1. **Hippocratic License 3.0** - Prohibits use that violates universal human rights
-2. **MIT License** - Permissive baseline for broad collaboration
-3. **Apache 2.0** - Patent protection and attribution requirements
-4. **Creative Commons BY-SA 4.0** - For documentation and educational materials
-5. **Blue Oak Model License 1.0.0** - Clear, modern permissive licensing
-6. **GPL-3.0** - Copyleft protection for core ethical components
+### The Six AI Governance Commons (BGINEXUS.io)
 
-See the [LICENSE](LICENSE) file for detailed information on how these licenses apply to different parts of the project.
+1. **[Value Commons](LICENSES/VALUE-COMMONS.md)** - Share automation gains with workers, communities, and shared infrastructures
+2. **[Transparency Commons](LICENSES/TRANSPARENCY-COMMONS.md)** - Standardize evidence of AI behavior and impacts through reusable documentation
+3. **[Sustainability Commons](LICENSES/SUSTAINABILITY-COMMONS.md)** - Embed ecological accounting, energy measurement, and resource constraints
+4. **[Access Commons](LICENSES/ACCESS-COMMONS.md)** - Enable meaningful use by public-interest actors, researchers, and underserved communities
+5. **[Reciprocity Commons](LICENSES/RECIPROCITY-COMMONS.md)** - Recognize and reward contributions from data creators, annotators, and infrastructure providers
+6. **[Governance Commons](LICENSES/GOVERNANCE-COMMONS.md)** - Create multi-stakeholder oversight with real authority over AI systems
 
-### Ethical Use Principles
+These licenses can be adopted **individually or in combination** to operationalize neurodivergent-centered and biocentric values in AI licensing agreements.
 
-- ✅ Human rights protection and dignity
+See the [LICENSE](LICENSE) file and [LICENSES/](LICENSES/) directory for detailed information.
+
+**Source:** Dr. Em M. Lenartowicz (2025), "Shaping AI Impacts Through Licensing: Illustrative Scenarios for the Design Space", BGINEXUS.io
+
+### Core Framework License
+
+The Emotional Comprehension Pipeline framework itself is released under **CC0 1.0 Universal (Public Domain)** to maximize reuse and benefit for all beings.
+
+### Alignment Principles
+
+- ✅ Neurodivergent-centered design and cognition
+- ✅ Biocentric values respecting all forms of life
 - ✅ Environmental sustainability and climate justice
-- ✅ Neurodivergent and biocentric alignment
 - ✅ Transparent and accountable AI development
-- ❌ No use in surveillance or oppression
-- ❌ No use in environmental harm
-- ❌ No use that violates human autonomy
+- ✅ Fair value distribution to all contributors
+- ✅ Multi-stakeholder governance and oversight
 
 ## Getting Started
 
