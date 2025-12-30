@@ -131,7 +131,10 @@ class PipelineValidator:
         samples_file = self.examples_dir / "input-output-samples.json"
         
         if not samples_file.exists():
-            return {"file_exists": False}
+            results["file_exists"] = False
+            return results
+            
+        results["file_exists"] = True
             
         try:
             with open(samples_file, 'r', encoding='utf-8') as f:
@@ -141,7 +144,7 @@ class PipelineValidator:
             results["has_samples"] = "samples" in data
             
             if "samples" in data and isinstance(data["samples"], list):
-                results["samples_count"] = len(data["samples"])
+                results["samples_count"] = len(data["samples"]) > 0
                 
                 # Validate first sample structure
                 if len(data["samples"]) > 0:
@@ -149,6 +152,12 @@ class PipelineValidator:
                     results["sample_has_id"] = "id" in sample
                     results["sample_has_input"] = "input" in sample
                     results["sample_has_expected_output"] = "expected_output" in sample
+                else:
+                    results["sample_has_id"] = False
+                    results["sample_has_input"] = False
+                    results["sample_has_expected_output"] = False
+            else:
+                results["samples_count"] = False
                     
         except Exception as e:
             results["error"] = str(e)
@@ -167,7 +176,10 @@ class PipelineValidator:
         dataset_file = self.examples_dir / "emotional-cases-dataset.json"
         
         if not dataset_file.exists():
-            return {"file_exists": False}
+            results["file_exists"] = False
+            return results
+            
+        results["file_exists"] = True
             
         try:
             with open(dataset_file, 'r', encoding='utf-8') as f:
@@ -177,7 +189,7 @@ class PipelineValidator:
             results["has_categories"] = "categories" in data
             
             if "categories" in data and isinstance(data["categories"], list):
-                results["categories_count"] = len(data["categories"])
+                results["categories_count"] = len(data["categories"]) > 0
                 
                 # Count total cases
                 total_cases = 0
@@ -185,7 +197,10 @@ class PipelineValidator:
                     if "cases" in category:
                         total_cases += len(category["cases"])
                         
-                results["total_cases"] = total_cases
+                results["total_cases"] = total_cases > 0
+            else:
+                results["categories_count"] = False
+                results["total_cases"] = False
                 
         except Exception as e:
             results["error"] = str(e)
@@ -283,8 +298,20 @@ class PipelineValidator:
         json_passed = all(
             r["valid"] for r in results.get("json_files", {}).values()
         )
-        samples_passed = results.get("samples_structure", {}).get("file_exists", False)
-        dataset_passed = results.get("dataset_structure", {}).get("file_exists", False)
+        
+        # Check all sample structure validations (exclude non-boolean keys like 'error')
+        samples_results = results.get("samples_structure", {})
+        samples_passed = all(
+            v for k, v in samples_results.items() 
+            if k != "error" and isinstance(v, bool)
+        ) if samples_results else False
+        
+        # Check all dataset structure validations (exclude non-boolean keys like 'error')
+        dataset_results = results.get("dataset_structure", {})
+        dataset_passed = all(
+            v for k, v in dataset_results.items() 
+            if k != "error" and isinstance(v, bool)
+        ) if dataset_results else False
         
         return all([structure_passed, json_passed, samples_passed, dataset_passed])
 
