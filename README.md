@@ -29,7 +29,7 @@ The Emotional Comprehension Pipeline is built on six interconnected architectura
 - MeTTa schemas
 - Y0X1 tag sets
 
-### 2. Anshar–Hyperon Pipeline
+### 2. Anshar–Hyperon Processing Layer
 
 **Purpose:** Neuro-symbolic stack for deep emotional comprehension.
 
