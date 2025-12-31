@@ -84,7 +84,7 @@ pytest
 pytest --cov=emo_comprehension --cov-report=term-missing --cov-report=html
 ```
 
-### Using Make
+### Using Make Commands
 
 ```bash
 make test        # With coverage
@@ -150,7 +150,7 @@ This runs formatting, linting, type checking, and tests.
 
 The project includes a Makefile with useful commands:
 
-```bash
+```text
 make help           # Show all available commands
 make install        # Install package in production mode
 make install-dev    # Install with development dependencies

@@ -4,7 +4,7 @@ This directory contains the core source code for the Emotional Comprehension Pip
 
 ## Structure
 
-```
+```text
 emo_comprehension/
 ├── __init__.py              # Package initialization
 ├── core/                    # Core functionality
