@@ -16,6 +16,7 @@ The Emotional Comprehension Pipeline is built on six interconnected architectura
 
 ### 1. Physix Transitional Layer
 
+*Physix* is an intentional term in this project, denoting the phenomenological "physics" that governs how lived experience is transformed into structured symbolic representations.
 **Purpose:** Translate lived experience into structured symbolic meaning.
 
 **Functions:**
