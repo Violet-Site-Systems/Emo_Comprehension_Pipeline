@@ -1,0 +1,238 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "description": "Dataset of emotional cases for training and testing the Emotional Comprehension Pipeline",
+    "purpose": "Provide diverse emotional scenarios for system development and validation",
+    "created": "2025-12-30",
+    "license": "CC0 1.0 Universal (Public Domain)",
+    "ethical_considerations": "This dataset aims to represent diverse emotional experiences including neurodivergent perspectives"
+  },
+  "categories": [
+    {
+      "category": "anxiety_and_stress",
+      "description": "Cases involving anxiety, stress, and related emotional states",
+      "cases": [
+        {
+          "id": "anxiety_001",
+          "text": "My mind won't stop racing with all the things that could go wrong tomorrow.",
+          "emotions": ["anxiety", "worry", "rumination"],
+          "intensity": 0.85,
+          "context": "anticipatory anxiety about future events",
+          "neurodivergent_considerations": "May relate to ADHD or autism-related anxiety patterns"
+        },
+        {
+          "id": "stress_001",
+          "text": "I feel like I'm being pulled in a hundred different directions at once.",
+          "emotions": ["stress", "overwhelm", "scattered"],
+          "intensity": 0.8,
+          "context": "multiple competing demands",
+          "neurodivergent_considerations": "Executive function challenges common in ADHD"
+        }
+      ]
+    },
+    {
+      "category": "joy_and_excitement",
+      "description": "Cases involving positive emotions like joy, excitement, and enthusiasm",
+      "cases": [
+        {
+          "id": "joy_001",
+          "text": "I just had the most amazing conversation about quantum physics and I can't stop thinking about it!",
+          "emotions": ["excitement", "joy", "intellectual_stimulation"],
+          "intensity": 0.9,
+          "context": "special interest engagement",
+          "neurodivergent_considerations": "Autistic joy from deep interest engagement"
+        },
+        {
+          "id": "excitement_001",
+          "text": "This is going to be incredible! I've been waiting for this moment for so long!",
+          "emotions": ["excitement", "anticipation", "enthusiasm"],
+          "intensity": 0.95,
+          "context": "positive anticipation",
+          "neurodivergent_considerations": null
+        }
+      ]
+    },
+    {
+      "category": "sadness_and_grief",
+      "description": "Cases involving sadness, grief, loss, and melancholy",
+      "cases": [
+        {
+          "id": "sadness_001",
+          "text": "Everything just feels heavy today. Like I'm moving through fog.",
+          "emotions": ["sadness", "heaviness", "disconnection"],
+          "intensity": 0.7,
+          "context": "depressive symptoms",
+          "neurodivergent_considerations": "May relate to autistic burnout or depression"
+        },
+        {
+          "id": "grief_001",
+          "text": "I know it's been months, but sometimes the loss still hits me like it just happened.",
+          "emotions": ["grief", "loss", "longing"],
+          "intensity": 0.75,
+          "context": "processing grief over time",
+          "neurodivergent_considerations": "Grief may be experienced intensely with heightened emotional sensitivity"
+        }
+      ]
+    },
+    {
+      "category": "confusion_and_uncertainty",
+      "description": "Cases involving confusion, uncertainty, and ambivalence",
+      "cases": [
+        {
+          "id": "confusion_001",
+          "text": "I can't tell if I'm upset about what they said or if I'm just tired and everything feels wrong.",
+          "emotions": ["confusion", "uncertainty", "emotional_ambiguity"],
+          "intensity": 0.65,
+          "context": "difficulty identifying emotions (alexithymia)",
+          "neurodivergent_considerations": "Alexithymia is common in autistic individuals"
+        },
+        {
+          "id": "uncertainty_001",
+          "text": "Part of me wants to go, but another part of me is screaming to stay home. I'm completely torn.",
+          "emotions": ["ambivalence", "uncertainty", "conflict"],
+          "intensity": 0.7,
+          "context": "internal conflict about decision",
+          "neurodivergent_considerations": "May relate to social anxiety or sensory overwhelm anticipation"
+        }
+      ]
+    },
+    {
+      "category": "frustration_and_anger",
+      "description": "Cases involving frustration, anger, and irritation",
+      "cases": [
+        {
+          "id": "frustration_001",
+          "text": "Why do people keep changing the plan without telling me? I can't function when things keep shifting.",
+          "emotions": ["frustration", "anxiety", "need_for_structure"],
+          "intensity": 0.8,
+          "context": "disruption of expected patterns",
+          "neurodivergent_considerations": "Autistic need for predictability and routine"
+        },
+        {
+          "id": "anger_001",
+          "text": "I'm so tired of being misunderstood and having to explain myself over and over.",
+          "emotions": ["anger", "frustration", "exhaustion"],
+          "intensity": 0.75,
+          "context": "repeated invalidation experiences",
+          "neurodivergent_considerations": "Common experience for neurodivergent individuals"
+        }
+      ]
+    },
+    {
+      "category": "sensory_emotional",
+      "description": "Cases where sensory experiences significantly impact emotional state",
+      "cases": [
+        {
+          "id": "sensory_001",
+          "text": "The buzzing of the fluorescent lights is making my skin crawl. I need to get out of here.",
+          "emotions": ["sensory_distress", "agitation", "overwhelm"],
+          "intensity": 0.85,
+          "context": "sensory overload",
+          "neurodivergent_considerations": "Sensory processing differences in autism/ADHD"
+        },
+        {
+          "id": "sensory_002",
+          "text": "The soft texture of this blanket and the gentle music are making me feel so calm and grounded.",
+          "emotions": ["calm", "comfort", "sensory_pleasure"],
+          "intensity": 0.8,
+          "context": "positive sensory regulation",
+          "neurodivergent_considerations": "Sensory seeking for regulation"
+        }
+      ]
+    },
+    {
+      "category": "masking_and_burnout",
+      "description": "Cases involving emotional labor, masking, and burnout",
+      "cases": [
+        {
+          "id": "masking_001",
+          "text": "I'm exhausted from pretending to be okay all day. I just want to be myself without performing.",
+          "emotions": ["exhaustion", "frustration", "longing_for_authenticity"],
+          "intensity": 0.9,
+          "context": "autistic masking fatigue",
+          "neurodivergent_considerations": "Autistic masking and its emotional toll"
+        },
+        {
+          "id": "burnout_001",
+          "text": "I can't do basic things anymore. Even answering messages feels impossible.",
+          "emotions": ["burnout", "depletion", "overwhelm"],
+          "intensity": 0.95,
+          "context": "autistic burnout or severe fatigue",
+          "neurodivergent_considerations": "Autistic burnout requires accommodation and recovery time"
+        }
+      ]
+    },
+    {
+      "category": "connection_and_belonging",
+      "description": "Cases involving social connection, belonging, and isolation",
+      "cases": [
+        {
+          "id": "connection_001",
+          "text": "For the first time in ages, I felt like someone really got me. We didn't have to explain ourselves.",
+          "emotions": ["connection", "joy", "relief"],
+          "intensity": 0.85,
+          "context": "experiencing genuine understanding",
+          "neurodivergent_considerations": "Value of neurodivergent peer connection"
+        },
+        {
+          "id": "isolation_001",
+          "text": "I'm surrounded by people but feel completely alone. Like I'm watching life through glass.",
+          "emotions": ["isolation", "loneliness", "disconnection"],
+          "intensity": 0.8,
+          "context": "social isolation despite physical presence",
+          "neurodivergent_considerations": "Common autistic experience of feeling different"
+        }
+      ]
+    },
+    {
+      "category": "complex_emotional_states",
+      "description": "Cases involving multiple simultaneous or conflicting emotions",
+      "cases": [
+        {
+          "id": "complex_001",
+          "text": "I'm proud of what I accomplished, but also terrified that it's not good enough and exhausted from the effort.",
+          "emotions": ["pride", "anxiety", "exhaustion", "accomplishment"],
+          "intensity": 0.75,
+          "context": "complex achievement emotions",
+          "neurodivergent_considerations": "Perfectionism and high standards common in gifted/autistic individuals"
+        },
+        {
+          "id": "complex_002",
+          "text": "I love them and want to be there for them, but I'm also angry about how they treated me and confused about what I need.",
+          "emotions": ["love", "anger", "confusion", "hurt"],
+          "intensity": 0.8,
+          "context": "relationship complexity",
+          "neurodivergent_considerations": "Difficulty with emotional ambiguity"
+        }
+      ]
+    }
+  ],
+  "usage_guidelines": {
+    "training": "These cases can be used for training emotional recognition and response generation systems",
+    "testing": "Use for validation of emotional comprehension accuracy",
+    "evaluation_criteria": [
+      "Accurate emotion identification",
+      "Recognition of intensity and valence",
+      "Understanding of context",
+      "Respect for neurodivergent experiences",
+      "Appropriate response generation"
+    ],
+    "ethical_considerations": [
+      "Respect the authenticity of emotional experiences",
+      "Avoid pathologizing neurodivergent emotions",
+      "Recognize that emotions are valid regardless of neurotype",
+      "Consider intersectionality in emotional experiences",
+      "Maintain privacy and dignity in case representation"
+    ]
+  },
+  "expansion_notes": {
+    "planned_additions": [
+      "More intersectional perspectives",
+      "Cultural diversity in emotional expression",
+      "Age-related emotional considerations",
+      "Trauma-informed cases",
+      "Positive emotional regulation examples"
+    ],
+    "community_contributions": "We welcome community contributions of emotional cases, especially from neurodivergent individuals sharing their lived experiences"
+  }
+}
