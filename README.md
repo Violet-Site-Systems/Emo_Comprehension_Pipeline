@@ -44,7 +44,7 @@ The Emotional Comprehension Pipeline is built on six interconnected architectura
 - JSON orchestration files
 - Curated emotional case dataset
 
-### 3. DAC Governance Layer
+### 3. Decentralized Autonomous Community (DAC) Governance Layer
 
 **Purpose:** Decentralized, emotionally intelligent community governance.
 
