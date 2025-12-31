@@ -9,7 +9,7 @@ This repository provides a pipeline for emotional comprehension in AI systems, e
 ## Template Repository
 
 This project is inspired by and builds upon concepts from:
-
+black tests/test_utils.py
 - [Neurodivergent Biocentric Alignment](https://github.com/colleenpridemore/neurodivergent-biocentric-alignment)
 
 ## Project Structure
