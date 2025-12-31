@@ -58,7 +58,56 @@ The Emotional Comprehension Pipeline framework itself is released under **CC0 1.
 
 ## Getting Started
 
-Documentation and examples are under development. Check the `docs/` and `examples/` directories for more information.
+### Installation
+
+Install from source:
+
+```bash
+pip install -e .
+```
+
+For development:
+
+```bash
+pip install -e ".[dev]"
+```
+
+### Quick Example
+
+```python
+from emo_comprehension import EmotionalAnalyzer, EmotionalComprehension, ResponseGenerator
+
+# Initialize components
+analyzer = EmotionalAnalyzer()
+comprehension = EmotionalComprehension()
+generator = ResponseGenerator()
+
+# Analyze and respond to emotional content
+text = "I'm feeling overwhelmed with everything going on."
+emotional_states = analyzer.analyze_text(text)
+result = comprehension.comprehend(emotional_states)
+response = generator.generate(result, tone="supportive")
+
+print(f"Response: {response.text}")
+```
+
+### Building and Testing
+
+See [docs/BUILD.md](docs/BUILD.md) for detailed build instructions.
+
+Quick commands:
+```bash
+make test           # Run tests
+make lint           # Check code quality
+make format         # Format code
+make all            # Run all checks
+```
+
+## Documentation
+
+- [Build Guide](docs/BUILD.md) - Installation and build instructions
+- [Examples](examples/) - Usage examples and patterns
+- API documentation (coming soon)
 
 ## Contributing
 
