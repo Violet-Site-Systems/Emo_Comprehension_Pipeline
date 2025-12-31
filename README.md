@@ -58,7 +58,7 @@ The Emotional Comprehension Pipeline is built on six interconnected architectura
 - Smart contracts
 - Governance dashboards
 
-### 4. Scaling BASI Roadmap
+### 4. Scaling BASI (Behavioral Alignment and Safety Infrastructure) Roadmap
 
 **Purpose:** Ensure scalable, efficient, and safe operation.
 
