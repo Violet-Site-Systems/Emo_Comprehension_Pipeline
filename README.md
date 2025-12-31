@@ -4,7 +4,101 @@
 
 ## Overview
 
-This repository provides a pipeline for emotional comprehension in AI systems, enabling more empathetic and contextually appropriate responses. The project integrates neuro-symbolic approaches with modern AI architectures to create emotionally aware and aligned AI systems.
+This repository hosts the **Anshar–Hyperon Pipeline** and its extended architecture for emotionally intelligent, ethically grounded, and scalable systems. It integrates phenomenological translation, neuro-symbolic processing, decentralized governance, and formal scaling constraints, with cross-cutting layers for identity continuity and ethical oversight.
+
+The goal is to create interoperable modules that allow artificial agents and decentralized communities to **comprehend, honor, and align with human emotional nuance**.
+
+---
+
+## Architecture Layers
+
+The Emotional Comprehension Pipeline is built on six interconnected architectural layers, each addressing a critical aspect of emotionally intelligent AI systems:
+
+### 1. Physix Transitional Layer
+
+*Physix* is an intentional term in this project, denoting the phenomenological "physics" that governs how lived experience is transformed into structured symbolic representations.
+**Purpose:** Translate lived experience into structured symbolic meaning.
+
+**Functions:**
+- Experience → Structure → Meaning transformation
+- Emotional grammar parsing
+- Metaphor bridging
+- Identity modeling
+
+**Artifacts:**
+- MeTTa schemas
+- Y0X1 tag sets
+
+### 2. Anshar–Hyperon Processing Layer
+
+**Purpose:** Neuro-symbolic stack for deep emotional comprehension.
+
+**Functions:**
+- IoNation frequency mapping
+- Y0X1 qualia tagging
+- MeTTa semantics processing
+- TQNN (Temporal Qualia Neural Network) memory
+- Hyperon reasoning engine
+
+**Artifacts:**
+- JSON orchestration files
+- Curated emotional case dataset
+
+### 3. Decentralized Autonomous Community (DAC) Governance Layer
+
+**Purpose:** Decentralized, emotionally intelligent community governance.
+
+**Functions:**
+- Collective intelligence coordination
+- Health-driven control mechanisms
+- Tokenomics management
+- Restorative mechanisms
+
+**Artifacts:**
+- Smart contracts
+- Governance dashboards
+
+### 4. Scaling BASI (Behavioral Alignment and Safety Infrastructure) Roadmap
+
+**Purpose:** Ensure scalable, efficient, and safe operation.
+
+**Functions:**
+- Clarity (Cₕ) metrics
+- Decoupling (D) strategies
+- Resonance (ρ) measurement
+- Efficiency envelope constraints
+
+**Artifacts:**
+- Formal metrics
+- Verification plots
+
+### 5. Identity Continuity Layer
+
+**Purpose:** Maintain longitudinal coherence of identity.
+
+**Functions:**
+- IoNation lattice construction
+- Temporal tracking
+- Cross-session memory integration
+
+**Artifacts:**
+- Identity grammars
+- Privacy-preserving schemas
+
+### 6. Ethical Oversight Layer
+
+**Purpose:** Embed moral technologies across all layers.
+
+**Functions:**
+- Generator functions for ethical constraints
+- Rights of Being/Sapience implementation
+- Anti-capture mechanisms
+
+**Artifacts:**
+- Smart contract clauses
+- Impact metrics
+
+---
 
 ## Template Repository
 
