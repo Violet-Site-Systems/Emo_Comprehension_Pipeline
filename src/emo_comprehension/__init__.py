@@ -1,19 +1,21 @@
-"""Emotional Comprehension Pipeline.
+"""Utility functions for the emotional comprehension pipeline."""
 
-A neuro-symbolic framework for deep emotional comprehension and aligned
-response generation in AI systems.
-"""
+import json
+from typing import Any, Dict, List, cast
 
-__version__ = "0.1.0"
-__author__ = "Violet Site Systems"
-__license__ = "CC0-1.0"
 
-from emo_comprehension.core.analyzer import EmotionalAnalyzer
-from emo_comprehension.core.comprehension import EmotionalComprehension
-from emo_comprehension.core.response import ResponseGenerator
+def load_config(config_path: str) -> Dict[str, Any]:
+    """Load configuration from a JSON file. 
 
-__all__ = [
-    "EmotionalAnalyzer",
+    Args:
+        config_path: Path to the configuration file
+
+    Returns:
+        Configuration dictionary
+    """
+    with open(config_path, "r") as f:
+        return cast(Dict[str, Any], json.load(f))
+
     "EmotionalComprehension",
     "ResponseGenerator",
 ]
