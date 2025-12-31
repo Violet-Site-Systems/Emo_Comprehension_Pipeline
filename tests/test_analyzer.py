@@ -1,6 +1,7 @@
 """Tests for the emotional analyzer module."""
 
 import pytest
+
 from emo_comprehension.core.analyzer import EmotionalAnalyzer, EmotionalState
 
 
