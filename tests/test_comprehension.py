@@ -12,7 +12,7 @@ def test_comprehension_initialization() -> None:
     """Test EmotionalComprehension initialization."""
     comp = EmotionalComprehension()
     assert comp.config == {}
-    
+
     comp_custom = EmotionalComprehension(config={"key": "value"})
     assert comp_custom.config == {"key": "value"}
 
@@ -21,7 +21,7 @@ def test_comprehend_empty_states() -> None:
     """Test comprehension with empty emotional states."""
     comp = EmotionalComprehension()
     result = comp.comprehend([])
-    
+
     assert isinstance(result, ComprehensionResult)
     assert result.emotional_states == []
     assert result.primary_emotion == "neutral"
@@ -38,7 +38,7 @@ def test_comprehend_single_state() -> None:
         arousal=0.6,
     )
     result = comp.comprehend([state])
-    
+
     assert isinstance(result, ComprehensionResult)
     assert len(result.emotional_states) == 1
     assert result.primary_emotion == "joy"
@@ -56,5 +56,5 @@ def test_comprehend_with_context() -> None:
     )
     context = {"situation": "loss"}
     result = comp.comprehend([state], context=context)
-    
+
     assert result.insights.get("context") == context

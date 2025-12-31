@@ -14,21 +14,19 @@ class GeneratedResponse(BaseModel):
         ..., ge=0.0, le=1.0, description="Alignment with input emotions"
     )
     tone: str = Field(..., description="Response tone")
-    metadata: Dict[str, Any] = Field(
-        default_factory=dict, description="Additional metadata"
-    )
+    metadata: Dict[str, Any] = Field(default_factory=dict, description="Additional metadata")
 
 
 class ResponseGenerator:
     """Generates emotionally aligned responses.
-    
+
     This class creates responses that are empathetic and contextually
     appropriate based on emotional comprehension results.
     """
 
     def __init__(self, model_name: Optional[str] = None) -> None:
         """Initialize the response generator.
-        
+
         Args:
             model_name: Name of the generation model
         """
@@ -47,20 +45,18 @@ class ResponseGenerator:
         tone: Optional[str] = None,
     ) -> GeneratedResponse:
         """Generate an emotionally aligned response.
-        
+
         Args:
             comprehension: Comprehension result to respond to
             prompt: Optional prompt for generation
             tone: Desired response tone
-            
+
         Returns:
             Generated response with alignment metrics
         """
         # Placeholder implementation
-        response_text = (
-            prompt or f"I understand you're feeling {comprehension.primary_emotion}."
-        )
-        
+        response_text = prompt or f"I understand you're feeling {comprehension.primary_emotion}."
+
         return GeneratedResponse(
             text=response_text,
             emotional_alignment=comprehension.confidence,
@@ -77,11 +73,11 @@ class ResponseGenerator:
         **kwargs: Any,
     ) -> List[GeneratedResponse]:
         """Generate responses for multiple comprehension results.
-        
+
         Args:
             comprehensions: List of comprehension results
             **kwargs: Additional generation parameters
-            
+
         Returns:
             List of generated responses
         """

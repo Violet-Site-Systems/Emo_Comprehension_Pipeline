@@ -13,7 +13,7 @@ def test_generator_initialization() -> None:
     """Test ResponseGenerator initialization."""
     gen = ResponseGenerator()
     assert gen.model_name == "default"
-    
+
     gen_custom = ResponseGenerator(model_name="custom")
     assert gen_custom.model_name == "custom"
 
@@ -27,9 +27,9 @@ def test_generate_response() -> None:
         confidence=0.8,
         insights={},
     )
-    
+
     response = gen.generate(comp_result)
-    
+
     assert isinstance(response, GeneratedResponse)
     assert isinstance(response.text, str)
     assert 0.0 <= response.emotional_alignment <= 1.0
@@ -45,7 +45,7 @@ def test_generate_with_custom_tone() -> None:
         confidence=0.7,
         insights={},
     )
-    
+
     response = gen.generate(comp_result, tone="supportive")
     assert response.tone == "supportive"
 
@@ -59,7 +59,7 @@ def test_generate_with_prompt() -> None:
         confidence=0.6,
         insights={},
     )
-    
+
     custom_prompt = "I hear your frustration."
     response = gen.generate(comp_result, prompt=custom_prompt)
     assert response.text == custom_prompt
@@ -82,7 +82,7 @@ def test_generate_batch() -> None:
             insights={},
         ),
     ]
-    
+
     responses = gen.generate_batch(comp_results)
     assert len(responses) == 2
     assert all(isinstance(r, GeneratedResponse) for r in responses)

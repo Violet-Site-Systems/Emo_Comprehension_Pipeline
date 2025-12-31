@@ -11,21 +11,19 @@ class EmotionalState(BaseModel):
     intensity: float = Field(..., ge=0.0, le=1.0, description="Emotional intensity")
     valence: float = Field(..., ge=-1.0, le=1.0, description="Positive/negative valence")
     arousal: float = Field(..., ge=0.0, le=1.0, description="Activation level")
-    context: Optional[Dict[str, Any]] = Field(
-        default=None, description="Contextual information"
-    )
+    context: Optional[Dict[str, Any]] = Field(default=None, description="Contextual information")
 
 
 class EmotionalAnalyzer:
     """Analyzes emotional content in text and multimodal inputs.
-    
+
     This class provides methods for detecting and analyzing emotional
     content with a focus on neurodivergent-centered design.
     """
 
     def __init__(self, model_name: Optional[str] = None) -> None:
         """Initialize the emotional analyzer.
-        
+
         Args:
             model_name: Name of the model to use for analysis
         """
@@ -39,10 +37,10 @@ class EmotionalAnalyzer:
 
     def analyze_text(self, text: str) -> List[EmotionalState]:
         """Analyze emotional content in text.
-        
+
         Args:
             text: Input text to analyze
-            
+
         Returns:
             List of detected emotional states
         """
@@ -56,15 +54,13 @@ class EmotionalAnalyzer:
             )
         ]
 
-    def analyze_context(
-        self, text: str, context: Dict[str, Any]
-    ) -> List[EmotionalState]:
+    def analyze_context(self, text: str, context: Dict[str, Any]) -> List[EmotionalState]:
         """Analyze emotional content with additional context.
-        
+
         Args:
             text: Input text to analyze
             context: Additional contextual information
-            
+
         Returns:
             List of detected emotional states with context
         """

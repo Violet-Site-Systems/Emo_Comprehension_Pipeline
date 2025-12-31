@@ -6,10 +6,10 @@ import json
 
 def load_config(config_path: str) -> Dict[str, Any]:
     """Load configuration from a JSON file.
-    
+
     Args:
         config_path: Path to the configuration file
-        
+
     Returns:
         Configuration dictionary
     """
@@ -19,10 +19,10 @@ def load_config(config_path: str) -> Dict[str, Any]:
 
 def normalize_scores(scores: List[float]) -> List[float]:
     """Normalize a list of scores to sum to 1.0.
-    
+
     Args:
         scores: List of scores to normalize
-        
+
     Returns:
         Normalized scores
     """
@@ -34,10 +34,10 @@ def normalize_scores(scores: List[float]) -> List[float]:
 
 def validate_emotional_state(state: Dict[str, Any]) -> bool:
     """Validate an emotional state dictionary.
-    
+
     Args:
         state: Emotional state dictionary
-        
+
     Returns:
         True if valid, False otherwise
     """

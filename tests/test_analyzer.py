@@ -33,7 +33,7 @@ def test_analyzer_initialization() -> None:
     """Test EmotionalAnalyzer initialization."""
     analyzer = EmotionalAnalyzer()
     assert analyzer.model_name == "default"
-    
+
     analyzer_custom = EmotionalAnalyzer(model_name="custom")
     assert analyzer_custom.model_name == "custom"
 
@@ -42,7 +42,7 @@ def test_analyze_text() -> None:
     """Test text analysis."""
     analyzer = EmotionalAnalyzer()
     states = analyzer.analyze_text("I am feeling happy today.")
-    
+
     assert isinstance(states, list)
     assert len(states) > 0
     assert all(isinstance(s, EmotionalState) for s in states)
@@ -53,7 +53,7 @@ def test_analyze_context() -> None:
     analyzer = EmotionalAnalyzer()
     context = {"user_id": "123", "timestamp": "2025-12-31"}
     states = analyzer.analyze_context("I am feeling happy today.", context)
-    
+
     assert isinstance(states, list)
     assert len(states) > 0
     assert states[0].context == context
