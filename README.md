@@ -9,11 +9,13 @@ This repository provides a pipeline for emotional comprehension in AI systems, e
 ## Template Repository
 
 This project is inspired by and builds upon concepts from:
+black tests/test_utils.py
+
 - [Neurodivergent Biocentric Alignment](https://github.com/colleenpridemore/neurodivergent-biocentric-alignment)
 
 ## Project Structure
 
-```
+```text
 Emo_Comprehension_Pipeline/
 ├── docs/         # Documentation and guides
 ├── src/          # Source code
@@ -96,6 +98,7 @@ print(f"Response: {response.text}")
 See [docs/BUILD.md](docs/BUILD.md) for detailed build instructions.
 
 Quick commands:
+
 ```bash
 make test           # Run tests
 make lint           # Check code quality

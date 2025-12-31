@@ -30,6 +30,7 @@ print(f"Response: {response.text}")
 ## Available Examples (Coming Soon)
 
 Examples will demonstrate:
+
 - Basic emotional analysis
 - Response generation
 - Context-aware emotional comprehension
@@ -55,6 +56,7 @@ python examples/basic_usage.py
 ## Using Examples
 
 Each example includes:
+
 - Clear description of the use case
 - Setup instructions
 - Expected output
@@ -65,6 +67,7 @@ Each example includes:
 We welcome community-contributed examples that demonstrate ethical and effective use of the pipeline.
 
 When contributing:
+
 - Keep examples simple and focused
 - Include clear documentation
 - Follow the project's code style

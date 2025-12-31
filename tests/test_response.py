@@ -1,12 +1,13 @@
 """Tests for the response generation module."""
 
 import pytest
+
 from emo_comprehension.core.analyzer import EmotionalState
 from emo_comprehension.core.comprehension import (
-    EmotionalComprehension,
     ComprehensionResult,
+    EmotionalComprehension,
 )
-from emo_comprehension.core.response import ResponseGenerator, GeneratedResponse
+from emo_comprehension.core.response import GeneratedResponse, ResponseGenerator
 
 
 def test_generator_initialization() -> None:
