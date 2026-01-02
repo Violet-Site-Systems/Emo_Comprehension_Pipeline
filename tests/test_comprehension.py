@@ -1,10 +1,11 @@
 """Tests for the emotional comprehension module."""
 
 import pytest
+
 from emo_comprehension.core.analyzer import EmotionalState
 from emo_comprehension.core.comprehension import (
-    EmotionalComprehension,
     ComprehensionResult,
+    EmotionalComprehension,
 )
 
 

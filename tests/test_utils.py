@@ -1,9 +1,10 @@
 """Tests for utility functions."""
 
-import pytest
-import tempfile
 import json
+import tempfile
 from pathlib import Path
+
+import pytest
 
 from emo_comprehension.utils import (
     load_config,

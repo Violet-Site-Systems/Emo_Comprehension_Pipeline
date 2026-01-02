@@ -1,7 +1,7 @@
 """Utility functions for the emotional comprehension pipeline."""
 
-from typing import Dict, Any, List
 import json
+from typing import Any, Dict, List
 
 
 def load_config(config_path: str) -> Dict[str, Any]:
